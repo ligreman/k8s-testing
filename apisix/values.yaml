@@ -646,7 +646,7 @@ dataPlane:
     ## @param dataPlane.ingress.path Default path for the ingress record
     ## NOTE: You may need to set this to '/*' in order to use this with ALB ingress controllers
     ##
-    path: /
+    path: '/*'
     ## @param dataPlane.ingress.annotations Additional annotations for the Ingress resource. To enable certificate autogeneration, place here your cert-manager annotations.
     ## Use this parameter to set the required annotations for cert-manager, see
     ## ref: https://cert-manager.io/docs/usage/ingress/#supported-annotations
@@ -2229,7 +2229,7 @@ dashboard:
   ingress:
     ## @param dashboard.ingress.enabled Enable ingress record generation for Apisix
     ##
-    enabled: false
+    enabled: true
     ## @param dashboard.ingress.pathType Ingress path type
     ##
     pathType: ImplementationSpecific
@@ -2247,7 +2247,7 @@ dashboard:
     ## @param dashboard.ingress.path Default path for the ingress record
     ## NOTE: You may need to set this to '/*' in order to use this with ALB ingress controllers
     ##
-    path: /
+    path: '/*'
     ## @param dashboard.ingress.annotations Additional annotations for the Ingress resource. To enable certificate autogeneration, place here your cert-manager annotations.
     ## Use this parameter to set the required annotations for cert-manager, see
     ## ref: https://cert-manager.io/docs/usage/ingress/#supported-annotations
