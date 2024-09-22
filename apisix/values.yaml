@@ -628,7 +628,7 @@ dataPlane:
   ingress:
     ## @param dataPlane.ingress.enabled Enable ingress record generation for Apisix
     ##
-    enabled: false
+    enabled: true
     ## @param dataPlane.ingress.pathType Ingress path type
     ##
     pathType: ImplementationSpecific
